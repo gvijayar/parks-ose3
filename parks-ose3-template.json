@@ -30,7 +30,7 @@
         {
             "description": "Git source URI for application",
             "name": "SOURCE_REPOSITORY_URL",
-            "value": "https://github.com/jboss-openshift/openshift-quickstarts",
+            "value": "https://github.com/gvijayar/parks-ose3.git",
             "required": true
         },
         {
