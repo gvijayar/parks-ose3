@@ -18,7 +18,7 @@
         {
             "description": "The name for the application.",
             "name": "APPLICATION_NAME",
-            "value": "jws-app",
+            "value": "jws-parks",
             "required": true
         },
         {
