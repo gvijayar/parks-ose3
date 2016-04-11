@@ -32,7 +32,7 @@
     -->
                
     <Resource name="jdbc/PostgreSQLDS"
-              url="jdbc:postgresql://${env.OPENSHIFT_POSTGRESQL_DB_HOST}:${env.OPENSHIFT_POSTGRESQL_DB_PORT}/${env.OPENSHIFT_APP_NAME}"
+              url="jdbc:postgresql://127.0.0.1:5432/parksdb"
               driverClassName="org.postgresql.xa.PGXADataSource"
               username="${env.OPENSHIFT_POSTGRESQL_DB_USERNAME}"
               password="${env.OPENSHIFT_POSTGRESQL_DB_PASSWORD}"
