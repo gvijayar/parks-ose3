@@ -52,6 +52,18 @@
             "required": false
         },
         {
+            "description": "Database Host Name",
+            "name": "DB_HOST",
+            "value": "127.0.0.1",
+            "required": true
+        },
+        {
+            "description": "Database Port",
+            "name": "DB_PORT",
+            "value": "5432",
+            "required": true
+        },        
+        {
             "description": "Database name",
             "name": "DB_DATABASE",
             "value": "parksdb",
