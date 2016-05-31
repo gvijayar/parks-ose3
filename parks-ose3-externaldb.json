@@ -333,6 +333,14 @@
                                         "value": "${DB_JNDI}"
                                     },
                                     {
+                                        "name": "DB_HOST",
+                                        "value": "${DB_HOST}"
+                                    },  
+                                    {
+                                        "name": "DB_PORT",
+                                        "value": "${DB_PORT}"
+                                    },                                    
+                                    {
                                         "name": "DB_USERNAME",
                                         "value": "${DB_USERNAME}"
                                     },
