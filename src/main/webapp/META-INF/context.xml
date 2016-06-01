@@ -35,7 +35,7 @@
               url="jdbc:postgresql://10.1.0.8:5432/sampledb"
               driverClassName="org.postgresql.Driver"
               username="userDKN"
-              password="lxHwawVktqh8rWBh89"
+              password="lxHwawVktqh8rWBh"
               auth="Container"
               type="javax.sql.DataSource"
               maxActive="20"
