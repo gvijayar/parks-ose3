@@ -32,7 +32,7 @@
     -->
                
     <Resource name="jdbc/PostgreSQLDS"
-              url="jdbc:postgresql://10.1.0.8:5432/${env.OPENSHIFT_APP_NAME}"
+              url="jdbc:postgresql://10.1.0.8:5432/${env.OPENSHIFT_DB_NAME}"
               driverClassName="org.postgresql.Driver"
               username="userDKN"
               password="lxHwawVktqh8rWBh"
