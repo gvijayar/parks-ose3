@@ -32,10 +32,10 @@
     -->
                
     <Resource name="jdbc/PostgreSQLDS"
-              url="jdbc:postgresql://${env.DB_HOST}:${env.DB_PORT}/${env.OPENSHIFT_APP_NAME}"
+              url="jdbc:postgresql://10.1.0.8:5432/sampledb"
               driverClassName="org.postgresql.Driver"
-              username="${env.DB_USERNAME}"
-              password="${env.DB_PASSWORD}"
+              username="userDKN"
+              password="lxHwawVktqh8rWBh"
               auth="Container"
               type="javax.sql.DataSource"
               maxActive="20"
