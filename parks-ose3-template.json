@@ -411,7 +411,7 @@
                             "from": {
                                 "kind": "ImageStreamTag",
                                 "namespace": "${IMAGE_STREAM_NAMESPACE}",
-                                "name": "postgresql:9.2"
+                                "name": "postgresql:latest"
                             }
                         }
                     },
