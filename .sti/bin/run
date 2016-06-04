@@ -1,0 +1,4 @@
+echo " **********  Invoking Custom Run Script"
+echo " **********  Invoking Base Run Script"
+
+/usr/local/sti/run
