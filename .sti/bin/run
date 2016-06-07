@@ -7,7 +7,7 @@ function generate_datasource(){
 datasources="$(generate_datasource)\n\n"
 
 C=$(echo $datasources | sed 's/\//\\\//g')
-sed "/<\/Context>/ s/.*/${C}\n&/" $JWS_HOME/conf/context.xml
+sed -i "/<\/Context>/ s/.*/${C}\n&/" $JWS_HOME/conf/context.xml
 
 echo " **********  Contents of Context.xml"
 cat /opt/webserver/conf/context.xml
