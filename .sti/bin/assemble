@@ -8,7 +8,7 @@ datasources="$(generate_datasource)\n\n"
 #echo "$datasources"
 #sed -i "s||$datasources|" $JWS_HOME/conf/context.xml
 
-C=$(echo datasources | sed 's/\//\\\//g')
+C=$(echo $datasources | sed 's/\//\\\//g')
 sed "/<\/Context>/ s/.*/${C}\n&/" $JWS_HOME/conf/context.xml
 
 echo " **********  Going to call Parent Assemble Script"
