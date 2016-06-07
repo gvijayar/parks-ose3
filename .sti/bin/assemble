@@ -1,7 +1,6 @@
-echo " **********  Invoking Custom Assemble Script"
-echo " **********  Calling Base Script"
-echo " **********  Going to configure context.xml"
+echo " **  Invoking Custom Assemble Script"
 
+# Generates the appropriate datasource based on input parameters from template
 function generate_datasource(){
   echo " <Resource name=\"jdbc/PostgreSQLDS\"\nurl=\"jdbc:postgresql://172.30.73.46:5432/sampledb\"\ndriverClassName=\"org.postgresql.xa.PGXADataSource\"\nusername=\"userXO2\"\npassword=\"DAsettShuF2aaXcK\"\nauth=\"Container\"\ntype=\"javax.sql.DataSource\"\nmaxActive=\"20\"\nmaxIdle=\"5\"\nmaxWait=\"10000\" />"          
 }
@@ -10,7 +9,7 @@ datasources="$(generate_datasource)\n\n"
 C=$(echo $datasources | sed 's/\//\\\//g')
 sed -i "/<\/Context>/ s/.*/${C}\n&/" $JWS_HOME/conf/context.xml
 
-echo " **********  Going to call Parent Assemble Script"
+echo " **  Going to call Parent Assemble Script"
 /usr/local/s2i/assemble
 
 
