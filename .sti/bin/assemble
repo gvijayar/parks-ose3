@@ -12,9 +12,17 @@ function generate_datasource(){
             maxActive=\"20\"
             maxIdle=\"5\"
             maxWait=\"10000\"/>"
-  echo "$ds"     
 }
-datasources="$(generate_datasource)"
+datasources="<Resource name=\"jdbc/PostgreSQLDS\"
+            url=\"jdbc:postgresql://172.30.73.46:5432/sampledb\"
+            driverClassName=\"org.postgresql.xa.PGXADataSource\"
+            username=\"userXO2\"
+            password=\"DAsettShuF2aaXcK\"
+            auth=\"Container\"
+            type=\"javax.sql.DataSource\"
+            maxActive=\"20\"
+            maxIdle=\"5\"
+            maxWait=\"10000\"/>"
 sed -i "s|<!-- ##DATASOURCES## -->|$datasources|" $JWS_HOME/conf/context.xml         
 echo " **********  Going to call Parent Assemble Script"
 /usr/local/s2i/assemble
