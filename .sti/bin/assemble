@@ -2,6 +2,17 @@ echo " **********  Invoking Custom Assemble Script"
 echo " **********  Calling Base Script"
 
 echo " **********  Going to configure context.xml"
-ds = ""
+ds = "<Resource name="\jdbc/PostgreSQLDS\"
+              url=\"jdbc:postgresql://172.30.73.46:5432/sampledb\"
+              driverClassName=\"org.postgresql.xa.PGXADataSource\"
+              username=\"userXO2\"
+              password=\"DAsettShuF2aaXcK\"
+              auth=\"Container\"
+              type=\"javax.sql.DataSource\"
+              maxActive=\"20\"
+              maxIdle=\"5\"
+              maxWait=\"10000\"/>"
+
+sed -i  ds  $JWS_HOME/conf/context.xml          
 
 /usr/local/s2i/assemble
