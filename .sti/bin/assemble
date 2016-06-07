@@ -13,7 +13,7 @@ function generate_datasource(){
             maxIdle=\"5\"
             maxWait=\"10000\"/>"
 }
-datasources="$datasources$(generate_datasource)
+datasources=generate_datasource
 sed -i "s|<!-- ##DATASOURCES## -->|$datasources|" $JWS_HOME/conf/context.xml         
 echo " **********  Going to call Parent Assemble Script"
 /usr/local/s2i/assemble
