@@ -1,3 +1,3 @@
-echo " **********  Invoking Custom Run Script"
-echo " **********  Invoking Base Run Script"
-/usr/local/s2i/run
+#!/bin/sh                                                                       
+                                                                                
+exec $JWS_HOME/bin/launch.sh
