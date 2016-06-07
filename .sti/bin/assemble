@@ -2,7 +2,7 @@ echo " **********  Invoking Custom Assemble Script"
 echo " **********  Calling Base Script"
 echo " **********  Going to configure context.xml"
 function generate_datasource(){
-  ds = "<Resource name="\jdbc/PostgreSQLDS\"
+  ds = "<Resource name=\"jdbc/PostgreSQLDS\"
             url=\"jdbc:postgresql://172.30.73.46:5432/sampledb\"
             driverClassName=\"org.postgresql.xa.PGXADataSource\"
             username=\"userXO2\"
