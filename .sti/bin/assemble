@@ -1,3 +1,7 @@
 echo " **********  Invoking Custom Assemble Script"
 echo " **********  Calling Base Script"
+
+echo " **********  Going to configure context.xml"
+ds = ""
+
 /usr/local/s2i/assemble
