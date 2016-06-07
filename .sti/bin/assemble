@@ -9,7 +9,7 @@ datasources="$(generate_datasource)\n\n"
 C=$(echo $datasources | sed 's/\//\\\//g')
 sed -i "/<\/Context>/ s/.*/${C}\n&/" $JWS_HOME/conf/context.xml
 
-echo " **  Going to call Parent Assemble Script"
+echo " **  Invoking Default Assemble Script"
 /usr/local/s2i/assemble
 
 
