@@ -28,7 +28,6 @@ datasources="$(generate_datasource $jndi $username $password $driver $url)\n\n"
 C=$(echo $datasources | sed 's/\//\\\//g')
 sed -i "/<\/Context>/ s/.*/${C}\n&/" $JWS_HOME/conf/context.xml
 
-echo " **  Invoking Default Assemble Script"
 /usr/local/s2i/assemble
 
 
