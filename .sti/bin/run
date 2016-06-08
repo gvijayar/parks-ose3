@@ -27,7 +27,7 @@ function generate_datasource(){
 driver="org.postgresql.Driver"
 jndi=$(find_env "DB_JNDI")  
 password=$(find_env "DB_PASSWORD")
-username=$(find_env "DB_USER")
+username=$(find_env "DB_USERNAME")
 database=$(find_env "DB_DATABASE")   
 url="jdbc:postgresql://$(find_env "DB_HOST"):$(find_env "DB_PORT")/$(find_env "DB_DATABASE")"
 
