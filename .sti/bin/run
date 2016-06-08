@@ -1,0 +1,5 @@
+#!/bin/sh                                                                       
+
+printenv
+
+exec $JWS_HOME/bin/launch.sh
