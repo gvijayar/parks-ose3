@@ -28,7 +28,7 @@ driver="org.postgresql.Driver"
 jndi=$(find_env "DB_JNDI")  
 password=$(find_env "DB_PASSWORD")     
 database=$(find_env "DB_DATABASE")   
-url="jdbc:postgresql://$(find_env \"DB_HOST\"):$(find_env \"DB_PORT\")/$(find_env \"DB_DATABASE\")"
+url="jdbc:postgresql://$(find_env "DB_HOST"):$(find_env "DB_PORT")/$(find_env "DB_DATABASE")"
 
 datasources="$(generate_datasource $jndi $username $password $driver $url)\n\n"
 
