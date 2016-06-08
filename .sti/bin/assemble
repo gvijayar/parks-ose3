@@ -18,10 +18,10 @@ function generate_datasource(){
 
 # Get Env Variables and Generate Config
 driver="org.postgresql.Driver"
-jndi=$(find_env "${prefix}_JNDI" "jboss/datasources/${service,,}")        
-password=$(find_env "${prefix}_PASSWORD")                                 
-database=$(find_env "${prefix}_DATABASE")                                 
-url="jdbc:${db,,}://$(find_env "${service}_SERVICE_HOST"):$(find_env "${service}_SERVICE_PORT")/$database"
+jndi=$(find_env "DB_JNDI")        
+password=$(find_env "DB_PASSWORD")                                 
+database=$(find_env "DB_DATABASE")                                 
+url="jdbc:postgresql://$(find_env "DB_HOST"):$(find_env "DB_PORT")/$database"
 
 datasources="$(generate_datasource $jndi $username $password $driver $url)\n\n"
 
